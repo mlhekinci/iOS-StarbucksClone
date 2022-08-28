@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m1l-cS-XJB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarbuckClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A2E-1r-dOn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="97.767857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GDI-sN-s3g">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m1l-cS-XJB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wBQ-4M-S8t">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemGreenColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="doJ-cq-Ov5" kind="relationship" relationship="viewControllers" id="iOd-Rw-RsE"/>
+                        <segue destination="DdU-nf-gBS" kind="relationship" relationship="viewControllers" id="dB7-uN-WvX"/>
+                        <segue destination="EFJ-yf-O72" kind="relationship" relationship="viewControllers" id="c3y-bb-mXy"/>
+                        <segue destination="hTY-V8-FM8" kind="relationship" relationship="viewControllers" id="IUK-K1-1Ag"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwi-ut-hnd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Menü-->
+        <scene sceneID="HWX-dH-Ica">
+            <objects>
+                <viewController id="hTY-V8-FM8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0up-nb-GO7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="J4Z-EL-QvC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mağazalar" image="shop" id="ukc-QQ-EbH"/>
+                    <navigationItem key="navigationItem" title="Menü" id="TBI-4h-IDj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0u-BA-Lrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455.072463768116" y="859.82142857142856"/>
+        </scene>
+        <!--Menü-->
+        <scene sceneID="UIb-ea-tM5">
+            <objects>
+                <viewController id="dxb-57-jks" customClass="MenuViewController" customModule="StarbuckClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u2K-4U-Qot">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pct-3H-Qcj">
+                                <rect key="frame" x="0.0" y="140" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Menü"/>
+                                    <segment title="Öne Çıkanlar"/>
+                                    <segment title="Favoriler"/>
+                                    <segment title="Sipariş ver"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QY3-2y-KKd">
+                                <rect key="frame" x="0.0" y="175" width="414" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categoryCell" rowHeight="150" id="lPb-pc-Wr3" customClass="CategoryTableViewCell" customModule="StarbuckClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lPb-pc-Wr3" id="W8h-6o-pCP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ION-X3-WUT">
+                                                    <rect key="frame" x="20" y="11" width="374" height="128"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="espresso" translatesAutoresizingMaskIntoConstraints="NO" id="7de-tv-k5x">
+                                                            <rect key="frame" x="8" y="8" width="72" height="112"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="72" id="fpp-1w-MzS"/>
+                                                                <constraint firstAttribute="height" constant="72" id="ifo-nd-ZQe"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6g-HQ-A4x">
+                                                            <rect key="frame" x="96" y="52" width="48" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="7de-tv-k5x" firstAttribute="leading" secondItem="ION-X3-WUT" secondAttribute="leading" constant="8" id="7ok-y3-c8G"/>
+                                                        <constraint firstItem="7de-tv-k5x" firstAttribute="centerY" secondItem="ION-X3-WUT" secondAttribute="centerY" id="B14-eD-2XB"/>
+                                                        <constraint firstItem="7de-tv-k5x" firstAttribute="top" secondItem="ION-X3-WUT" secondAttribute="top" constant="8" id="EiP-WK-j2P"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7de-tv-k5x" secondAttribute="bottom" constant="8" id="QEe-gV-1SX"/>
+                                                        <constraint firstItem="p6g-HQ-A4x" firstAttribute="leading" secondItem="7de-tv-k5x" secondAttribute="trailing" constant="16" id="T7g-rn-IlO"/>
+                                                        <constraint firstItem="p6g-HQ-A4x" firstAttribute="centerY" secondItem="ION-X3-WUT" secondAttribute="centerY" id="i0U-A1-tQa"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ION-X3-WUT" firstAttribute="top" secondItem="W8h-6o-pCP" secondAttribute="topMargin" id="BZz-Pj-PfZ"/>
+                                                <constraint firstItem="ION-X3-WUT" firstAttribute="leading" secondItem="W8h-6o-pCP" secondAttribute="leadingMargin" id="c2q-Uj-zsU"/>
+                                                <constraint firstItem="ION-X3-WUT" firstAttribute="bottom" secondItem="W8h-6o-pCP" secondAttribute="bottomMargin" id="pUq-uu-QBz"/>
+                                                <constraint firstItem="ION-X3-WUT" firstAttribute="trailing" secondItem="W8h-6o-pCP" secondAttribute="trailingMargin" id="txJ-XS-XPU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="7de-tv-k5x" id="RTk-oB-hX4"/>
+                                            <outlet property="categoryLabel" destination="p6g-HQ-A4x" id="OCO-kX-Wg7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eis-Km-IiS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menü" id="3uc-OP-YWj"/>
+                    <connections>
+                        <outlet property="tableView" destination="QY3-2y-KKd" id="ER5-Gp-WmW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7LZ-MN-O3R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.05797101449286" y="860.49107142857144"/>
+        </scene>
+        <!--Starbucks Card-->
+        <scene sceneID="yBU-oQ-ebc">
+            <objects>
+                <viewController id="EFJ-yf-O72" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAM-7t-rDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A5d-ck-OkZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Starbucks Card" image="credit-card" id="DGx-kz-9F8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5U-1X-21O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676.8115942028987" y="860.49107142857144"/>
+        </scene>
+        <!--Anasayfa-->
+        <scene sceneID="1Ek-aO-Tyt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="doJ-cq-Ov5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Anasayfa" image="star" id="uls-zb-qER"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lL4-Ra-MoP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qwb-o3-INv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTi-uy-axr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--Menü-->
+        <scene sceneID="23f-gl-l35">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DdU-nf-gBS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menü" image="coffee" id="ZF9-Jc-RxS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5yt-yu-2jK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dxb-57-jks" kind="relationship" relationship="rootViewController" id="RRE-v7-qpP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gS7-rn-F2f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="860.49107142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee" width="32" height="32"/>
+        <image name="credit-card" width="32" height="32"/>
+        <image name="espresso" width="720" height="720"/>
+        <image name="shop" width="32" height="32"/>
+        <image name="star" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
